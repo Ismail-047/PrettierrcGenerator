@@ -1,0 +1,21 @@
+header {
+   display: flex;
+   padding: 15px 0px;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(to right, #012F3F, #38AECD);
+}
+
+header h1 {
+   font-weight: 600;
+   color: rgb(226, 162, 43);
+   font-family: "Irish Grover", system-ui;
+   text-shadow: 2px 5px 10px rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 767px) {
+   header h1 {
+      padding: 5px 0px;
+      font-size: 23px;
+   }
+}
