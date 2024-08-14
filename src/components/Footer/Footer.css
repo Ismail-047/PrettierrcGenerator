@@ -1,0 +1,52 @@
+footer {
+   display: flex;
+   font-size: 20px;
+   font-weight: 600;
+   padding: 20px 100px;
+   align-items: center;
+   color: rgb(226, 162, 43);
+   justify-content: space-between;
+   text-shadow: 2px 5px 10px rgb(0, 0, 0);
+   background: linear-gradient(to right, #012F3F, #38AECD);
+}
+
+footer div {
+   text-shadow: none;
+   color: #403ed3;
+}
+
+footer span {
+   color: white;
+}
+
+@media only screen and (max-width: 767px) {
+   footer {
+      padding: 17px;
+      flex-direction: column;
+   }
+
+   footer p {
+      font-size: 17px;
+   }
+
+   footer div {
+      padding-top: 15px;
+      font-size: 15px;
+   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+   footer {
+      padding: 17px;
+      flex-direction: column;
+   }
+
+   footer p {
+      font-size: 20px;
+   }
+
+   footer div {
+      padding-top: 18px;
+      font-size: 18px;
+   }
+}
