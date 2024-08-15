@@ -1,4 +1,5 @@
 import { CustomOptionCard, InputTypeNumberCard, TrueFalseCard } from '../../components/InputCards/InputCards'
+import ConfigFile from '../../components/ConfigFile/ConfigFile';
 import Buttons from '../../components/Buttons/Buttons'
 import React, { useState } from 'react'
 import "./Home.css"
@@ -37,6 +38,13 @@ function Home() {
       setArrowFunctionParentheses("");
    };
 
+   const [displayConfigFile, setDisplayConfigFile] = useState(false);
+   const generateConfigFile = () => {
+      setDisplayConfigFile(true);
+   }
+   const closeConfigFile = () => {
+      setDisplayConfigFile(false);
+   }
 
    return (
       <main>
@@ -140,10 +148,14 @@ function Home() {
             onInputChange={(event) => setArrowFunctionParentheses(event.target.value)}
          />
 
-
-
          <Buttons
             onClearButtonClick={clearAllInputs}
+            onGenerateButtonClick={generateConfigFile}
+         />
+
+         <ConfigFile displayFile={displayConfigFile}
+            onCloseButtonClick={closeConfigFile}
+            onGenerateNewFileButtonClick={closeConfigFile}
          />
 
       </main>

@@ -1,0 +1,147 @@
+.configFile {
+   opacity: 0;
+   z-index: -1;
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 100vw;
+   min-height: 100vh;
+   background-color: rgba(211, 211, 211, 0.712);
+   transition: all 0.5s ease-in-out;
+}
+
+.displayConfigFile {
+   opacity: 1;
+   z-index: 1;
+}
+
+.mainContainer {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   padding: 25px 50px;
+   min-width: 60vw;
+   flex-direction: column;
+}
+
+.cancelIcon {
+   padding: 0px;
+   position: absolute;
+   top: 20px;
+   right: 25px;
+   cursor: pointer;
+   color: #1A687F;
+   border-radius: 60%;
+   background-color: white;
+   transition: background-color 0.25s ease-in-out !important;
+
+   &:hover {
+      background-color: orange;
+   }
+}
+
+.codeMainContainer {
+   display: flex;
+   flex-direction: column;
+   min-width: 75%;
+   margin-top: 10px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.codeContainerHeader {
+   position: relative;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   border-bottom: 0.5px solid lightgray;
+   padding: 7px 20px;
+   width: 100%;
+   color: white;
+   background-color: black;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.codeContainerBody {
+   padding: 10px 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: start;
+   background-color: black;
+   width: 100%;
+   color: white;
+}
+
+.copyButton {
+   font-size: 18px !important;
+   cursor: pointer;
+   transition: color 0.25s ease-in-out !important;
+
+   &:hover {
+      color: orange;
+   }
+}
+
+.copied {
+   display: none;
+   font-weight: 600;
+   font-size: 15px;
+   position: absolute;
+   top: -17px;
+   right: 10px;
+   color: #08D655;
+   transition: display 0.5s ease-in-out;
+}
+
+.isCopied {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.generateButton {
+   border: none;
+   outline: none;
+   color: white;
+   cursor: pointer;
+   min-width: 150px;
+   font-size: 15px;
+   font-weight: bold;
+   padding: 10px 22px;
+   border-radius: 5px;
+   margin-top: 20px;
+   background-color: #2d8885;
+   transition: all 0.25s ease-in-out;
+
+   &:hover {
+      color: rgb(226, 162, 43);
+   }
+}
+
+@media only screen and (max-width: 767px) {
+   .mainContainer h1 {
+      font-size: 25px;
+   }
+
+   .mainContainer {
+      padding: 20px;
+      min-width: 100vw;
+   }
+
+   .codeMainContainer {
+      margin-top: 20px;
+      min-width: 85vw;
+   }
+
+   .cancelIcon {
+      top: 15px;
+      right: 20px;
+   }
+}

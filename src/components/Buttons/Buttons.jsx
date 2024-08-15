@@ -3,7 +3,8 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import "./Buttons.css"
 
 function Buttons({
-   onClearButtonClick
+   onClearButtonClick,
+   onGenerateButtonClick
 }) {
    const [isCleared, setIsCleared] = useState(false);
 
@@ -17,7 +18,9 @@ function Buttons({
 
    return (
       <div className="buttons">
-         <button>
+         <button
+            onClick={onGenerateButtonClick}
+         >
             Generate Config
          </button>
 
