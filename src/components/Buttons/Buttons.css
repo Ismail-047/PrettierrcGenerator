@@ -1,0 +1,55 @@
+.buttons {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-width: 60%;
+   margin: 20px 0px 40px 0px;
+}
+
+.buttons button {
+   border: none;
+   outline: none;
+   color: white;
+   cursor: pointer;
+   min-width: 150px;
+   font-size: 15px;
+   font-weight: bold;
+   padding: 15px 30px;
+   border-radius: 5px;
+   background-color: #2d8885;
+   transition: all 0.25s ease-in-out;
+
+   &:hover {
+      color: rgb(226, 162, 43);
+   }
+}
+
+.clearButton {
+   position: relative;
+}
+
+.cleared {
+   display: none;
+   font-weight: bold;
+   font-size: 15px;
+   position: absolute;
+   top: -17px;
+   right: 10px;
+   color: #08D655;
+   transition: display 0.5s ease-in-out;
+}
+
+.displayButton {
+   display: inline-block;
+}
+
+@media only screen and (max-width: 767px) {
+   .buttons {
+      min-width: 90%;
+   }
+
+   .buttons button {
+      padding: 15px 20px;
+      min-width: 100px;
+   }
+}

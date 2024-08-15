@@ -20,31 +20,7 @@ main {
    margin-bottom: 10px;
 }
 
-.buttons {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   min-width: 60%;
-   margin: 20px 0px 40px 0px;
-}
 
-.buttons button {
-   border: none;
-   outline: none;
-   color: white;
-   cursor: pointer;
-   min-width: 150px;
-   font-weight: bold;
-   padding: 15px 30px;
-   position: relative;
-   border-radius: 5px;
-   background-color: #37ACA9;
-   transition: all 0.25s ease-in-out;
-
-   &:hover {
-      background-color: #3cc4bf;
-   }
-}
 
 @media only screen and (max-width: 767px) {
    #info {
@@ -53,15 +29,6 @@ main {
 
    #info p {
       margin-bottom: 7px;
-   }
-
-   .buttons {
-      min-width: 90%;
-   }
-
-   .buttons button {
-      padding: 15px 20px;
-      min-width: 100px;
    }
 }
 
