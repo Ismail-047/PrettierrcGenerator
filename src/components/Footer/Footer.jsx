@@ -5,7 +5,13 @@ function Footer() {
       <footer>
          <p>Copyright &copy; 2024 Prettierrc Generator.</p>
          <div>
-            <span>Powered By: </span><a href="#">Muhammad Ismail</a>
+            <span>Powered By: </span>
+            <a
+               href="https://github.com/Ismail-047"
+               target='_blank'
+            >
+               Muhammad Ismail
+            </a>
          </div>
       </footer>
    )
