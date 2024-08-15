@@ -1,5 +1,5 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import "./Buttons.css"
 
 function Buttons({
@@ -11,7 +11,7 @@ function Buttons({
       onClearButtonClick();
       setTimeout(() => {
          setIsCleared(false);
-      }, 2000)
+      }, 1500)
       setIsCleared(true);
    }
 
@@ -27,7 +27,7 @@ function Buttons({
             Clear
             <span className={`cleared ${isCleared ? "displayButton" : ""}`}>
                Cleared
-               {/* <CheckCircleOutlineIcon className='clearIcon' /> */}
+               <CheckCircleOutlineIcon className='checkIcon' />
             </span>
          </button>
       </div>

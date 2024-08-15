@@ -33,14 +33,22 @@
    font-weight: bold;
    font-size: 15px;
    position: absolute;
-   top: -17px;
+   top: -20px;
    right: 10px;
    color: #08D655;
    transition: display 0.5s ease-in-out;
 }
 
 .displayButton {
-   display: inline-block;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.checkIcon {
+   font-size: 17px !important;
+   font-weight: bold !important;
+   padding-left: 3px;
 }
 
 @media only screen and (max-width: 767px) {
