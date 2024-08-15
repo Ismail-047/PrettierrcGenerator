@@ -16,11 +16,11 @@
    font-weight: bold;
    padding: 15px 30px;
    border-radius: 5px;
-   background-color: #2d8885;
+   background-color: #256e6c;
    transition: all 0.25s ease-in-out;
 
    &:hover {
-      color: rgb(226, 162, 43);
+      color: rgb(255, 183, 50);
    }
 }
 

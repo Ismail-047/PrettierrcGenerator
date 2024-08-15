@@ -46,7 +46,7 @@ function InputTypeNumberCard({ label, description, value, onInputChange }) {
          <h2>{label}</h2>
          <p>{description}</p>
 
-         <label htmlFor={id} className='inputFiledsContainer'>
+         <label htmlFor={id} aria-label={id} className='inputFiledsContainer'>
             <input
                type="number"
                id={id}
