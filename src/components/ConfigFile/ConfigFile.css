@@ -29,6 +29,12 @@
    flex-direction: column;
 }
 
+.mainContainer p {
+   padding-top: 7px;
+   font-weight: 500;
+   color: #1A687F;
+}
+
 .cancelIcon {
    padding: 0px;
    position: absolute;
@@ -49,7 +55,7 @@
    display: flex;
    flex-direction: column;
    min-width: 75%;
-   margin-top: 10px;
+   margin-top: 5px;
    align-items: center;
    justify-content: space-between;
 }
@@ -77,6 +83,9 @@
    background-color: black;
    width: 100%;
    color: white;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+
 }
 
 .copyButton {
@@ -123,6 +132,32 @@
    &:hover {
       color: rgb(226, 162, 43);
    }
+}
+
+.keyValueContainer {
+   line-height: 1.20;
+   text-align: left;
+   padding-left: 30px;
+}
+
+.keys {
+   color: #5ec5fd;
+}
+
+.numberValues {
+   color: #8add8a;
+}
+
+.stringValues {
+   color: #df7348;
+}
+
+.values {
+   padding-left: 4px;
+}
+
+.boolvalues {
+   color: #016fc9;
 }
 
 @media only screen and (max-width: 767px) {

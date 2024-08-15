@@ -42,6 +42,7 @@ function Home() {
    const generateConfigFile = () => {
       setDisplayConfigFile(true);
    }
+
    const closeConfigFile = () => {
       setDisplayConfigFile(false);
    }
@@ -156,6 +157,20 @@ function Home() {
          <ConfigFile displayFile={displayConfigFile}
             onCloseButtonClick={closeConfigFile}
             onGenerateNewFileButtonClick={closeConfigFile}
+            tabs={tabs}
+            quotes={quotes}
+            tabWidth={tabWidth}
+            rangeEnd={rangeEnd}
+            proseWrap={proseWrap}
+            rangeStart={rangeStart}
+            printWidth={printWidth}
+            semicolons={semicolons}
+            jsxBrackets={jsxBrackets}
+            insertPragma={insertPragma}
+            requirePragma={requirePragma}
+            trailingCommas={trailingCommas}
+            bracketSpacing={bracketSpacing}
+            arrowFunctionParentheses={arrowFunctionParentheses}
          />
 
       </main>

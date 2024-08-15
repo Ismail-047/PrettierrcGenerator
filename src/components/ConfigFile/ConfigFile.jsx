@@ -8,7 +8,21 @@ import "./ConfigFile.css"
 function ConfigFile({
    displayFile,
    onCloseButtonClick,
-   onGenerateNewFileButtonClick
+   onGenerateNewFileButtonClick,
+   tabs,
+   quotes,
+   tabWidth,
+   rangeEnd,
+   proseWrap,
+   rangeStart,
+   printWidth,
+   semicolons,
+   jsxBrackets,
+   insertPragma,
+   requirePragma,
+   trailingCommas,
+   bracketSpacing,
+   arrowFunctionParentheses
 }) {
    const text = useRef(null);
    const [isCopied, setIsCopied] = useState(false);
@@ -27,10 +41,11 @@ function ConfigFile({
                onClick={onCloseButtonClick}
             />
             <h1>Your Config File</h1>
+            <p>Copy and paste the following code in your .prettierrc file</p>
 
             <div className="codeMainContainer">
                <div className="codeContainerHeader">
-                  <p>.prettierrc</p>
+                  <span>.prettierrc</span>
                   <CopyToClipboard text={text.current?.innerText}
                      onCopy={displayCopied}
                   >
@@ -41,12 +56,111 @@ function ConfigFile({
                      Copied
                      <CheckCircleOutlineIcon className='checkIcon' />
                   </span>
-
                </div>
                <div className="codeContainerBody"
                   ref={text}
                >
                   {"{"} <br />
+                  <div className="keyValueContainer">
+                     {semicolons && (
+                        <>
+                           <span className='keys'>semi:</span>
+                           <span className='values boolvalues'>{semicolons}</span>
+                           <br />
+                        </>
+                     )}
+                     {tabs && (
+                        <>
+                           <span className='keys'>tabs:</span>
+                           <span className='values boolvalues'>{tabs}</span>
+                           <br />
+                        </>
+                     )}
+                     {quotes && (
+                        <>
+                           <span className='keys'>quotes:</span>
+                           <span className='values boolvalues'>{quotes}</span>
+                           <br />
+                        </>
+                     )}
+                     {rangeEnd && (
+                        <>
+                           <span className='keys'>rangeEnd:</span>
+                           <span className='values numberValues'>{rangeEnd}</span>
+                           <br />
+                        </>
+                     )}
+                     {tabWidth && (
+                        <>
+                           <span className='keys'>tabWidth:</span>
+                           <span className='values numberValues'>{tabWidth}</span>
+                           <br />
+                        </>
+                     )}
+                     {proseWrap && (
+                        <>
+                           <span className='keys'>proseWrap:</span>
+                           <span className='values stringValues'>{`"${proseWrap}"`}</span>
+                           <br />
+                        </>
+                     )}
+                     {rangeStart && (
+                        <>
+                           <span className='keys'>rangeStart:</span>
+                           <span className='values numberValues'>{rangeStart}</span>
+                           <br />
+                        </>
+                     )}
+                     {printWidth && (
+                        <>
+                           <span className='keys'>printWidth:</span>
+                           <span className='values numberValues'>{printWidth}</span>
+                           <br />
+                        </>
+                     )}
+                     {jsxBrackets && (
+                        <>
+                           <span className='keys'>jsxBrackets:</span>
+                           <span className='values boolvalues'>{jsxBrackets}</span>
+                           <br />
+                        </>
+                     )}
+                     {insertPragma && (
+                        <>
+                           <span className='keys'>insertPragma:</span>
+                           <span className='values boolvalues'>{insertPragma}</span>
+                           <br />
+                        </>
+                     )}
+                     {requirePragma && (
+                        <>
+                           <span className='keys'>requirePragma:</span>
+                           <span className='values boolvalues'>{requirePragma}</span>
+                           <br />
+                        </>
+                     )}
+                     {trailingCommas && (
+                        <>
+                           <span className='keys'>trailingCommas:</span>
+                           <span className='values stringValues'>{`"${trailingCommas}"`}</span>
+                           <br />
+                        </>
+                     )}
+                     {bracketSpacing && (
+                        <>
+                           <span className='keys'>bracketSpacing:</span>
+                           <span className='values boolvalues'>{bracketSpacing}</span>
+                           <br />
+                        </>
+                     )}
+                     {arrowFunctionParentheses && (
+                        <>
+                           <span className='keys'>arrowFunctionParentheses:</span>
+                           <span className='values stringValues'>{`"${arrowFunctionParentheses}"`}</span>
+                           <br />
+                        </>
+                     )}
+                  </div>
                   {"}"}
                </div>
 
