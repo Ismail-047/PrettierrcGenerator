@@ -20,7 +20,7 @@ Generate custom `.prettierrc` configuration files with in seconds interface. Sim
 ## Live Demo
 
 The Prettierrc Generator project is deployed and available online. You can access the live version here:
-[Prettierrc Generator - Live Demo](https://celebrated-stardust-eb71c9.netlify.app/)
+[Prettierrc Generator - Live Demo](https://prettierrcgenerator.netlify.app/)
 
 ## Features
 
